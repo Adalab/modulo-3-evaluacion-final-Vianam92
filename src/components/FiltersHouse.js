@@ -10,9 +10,9 @@ return(
     <label htmlFor="house">Selecciona la casa:</label>
     <select id="house" name="house" onChange={handleChangeHouse} value={props.searchHouse}>
         <option value="gryffindor">Gryffindor</option>
-        <option value="hufflepuf">Hufflepuf</option>
+        <option value="hufflepuff">Hufflepuff</option>
         <option value="ravenclaw">Ravenclaw</option>
-        <option value="Slytherin">Slytherin</option>
+        <option value="slytherin">Slytherin</option>
     </select>
     </>
 )
