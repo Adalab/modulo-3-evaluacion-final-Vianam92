@@ -1,3 +1,11 @@
 body{
     background: black;
 }
+.main{
+    width: 100%;
+    margin-top:220px;
+    @media all and(min-width:768px){
+    display: flex;
+    justify-content: flex-end;
+    }
+}

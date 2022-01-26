@@ -1,113 +1,98 @@
 @import "./Variables.scss";
 
-.section-Gryffindor {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  flex-direction: column;
+.section--Gryffindor {
+  @include sectionDetail;
   &__title {
-    text-align: center;
-    color: $color-princ;
-    margin: 20px 10px 10px 10px;
+    color: rgb(214, 14, 14);
+    @include title;
   }
   &__image {
-    width: 150px;
-    height: 224px;
-    object-fit: cover;
+    @include image;
   }
   &__detail {
-    color: $color-princ;
-    margin: 5px;
+    color: rgb(214, 14, 14);
+    @include detail;
   }
   &__link {
-    text-decoration: none;
-    color: $color-princ;
-    text-align:right;
-    width: 100%;
-    padding:10px;
+    color: rgb(214, 14, 14);
+    @include link;
+  }
+  &__img_house{
+    @include house;
   }
 };
 
-.section-Slytherin {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  flex-direction: column;
+.section--Slytherin {
+  @include sectionDetail;
   &__title {
-    text-align: center;
     color: #2A623D;
-    margin: 20px 10px 10px 10px;
+    @include title;
   }
   &__image {
-    width: 150px;
-    height: 224px;
-    object-fit: cover;
+    @include image;
   }
   &__detail {
     color: #2A623D;
-    margin: 5px;
+    @include detail;
   }
   &__link {
-    text-decoration: none;
+    @include link;
     color: #2A623D;
-    text-align:right;
-    width: 100%;
-    padding:10px;
+    
+  }
+  &__img_house{
+    @include house;
   }
 };
 
-.section-Ravenclaw {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  flex-direction: column;
+.section--Ravenclaw {
+  @include sectionDetail;
   &__title {
-    text-align: center;
     color: #946B2D ;
-    margin: 20px 10px 10px 10px;
+    @include title;
   }
   &__image {
-    width: 150px;
-    height: 224px;
-    object-fit: cover;
+   @include image;
   }
   &__detail {
     color: #946B2D ;
-    margin: 5px;
+    @include detail;
   }
   &__link {
-    text-decoration: none;
     color: #946B2D ;
-    text-align:right;
-    width: 100%;
-    padding:10px;
+    @include link;
+  }
+  &__img_house{
+    @include house;
   }
 };
 
-.section-Hufflepuff {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  flex-direction: column;
+.section--Hufflepuff {
+  @include sectionDetail;
   &__title {
-    text-align: center;
-    color: #FFF4B1;
-    margin: 20px 10px 10px 10px;
+    color: #92873d;
+@include title;
   }
   &__image {
-    width: 150px;
-    height: 224px;
-    object-fit: cover;
+    @include image;
   }
   &__detail {
-    color: #FFF4B1;
-    margin: 5px;
+    color: #92873d;
+    @include detail;
   }
   &__link {
-    text-decoration: none;
-    color:#FFF4B1;
-    text-align:right;
-    width: 100%;
-    padding:10px;
+    color:#92873d;
+    @include link;
+  }
+  &__img_house{
+    @include house;
   }
 };
+
+.small{
+  color:white;
+  font-size: 20px;
+}
+.live{
+  color:rgba(192, 11, 11, 0.692);
+}

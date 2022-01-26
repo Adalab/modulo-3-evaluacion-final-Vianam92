@@ -7,13 +7,13 @@
   flex-direction: column;
   &__link{
     text-decoration: none;
-    color: $color-princ;
+    color: red;
     text-align:right;
     width: 100%;
     padding:10px;
   }
   &__title{
-    color: $color-princ;
+    color: red;
     margin: 5px;
   }
 }

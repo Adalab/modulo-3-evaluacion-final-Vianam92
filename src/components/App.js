@@ -71,7 +71,7 @@ function App() {
   return (
     <>
      <Header/>
-     <main>
+     <main className="main">
       <Switch>
         <Route path="/" exact>
           <Filters
