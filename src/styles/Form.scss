@@ -16,7 +16,7 @@
     @include btn;
     color: $colorRed;
     &:hover {
-      background: #fdc939;
+      background: #9b4207;
     }
   }
 }
@@ -37,7 +37,7 @@
     @include btn;
     color: #1a472a;
     &:hover {
-      background: #aaaaaa;
+      background: #56f35e;
     }
   }
 }
@@ -56,9 +56,9 @@
   }
   &__btn {
     @include btn;
-    color: #0e1a40;
+    color: #07237e;
     &:hover {
-      background: #222f5b;
+      background: #7c93df;
     }
   }
 }
@@ -77,9 +77,12 @@
   }
   &__btn {
     @include btn;
-    color: #221e02;
+    color: #97870f;
+    @media all and(min-width:768px){
+      font-size: 1.2rem;
+    }
     &:hover {
-      background: #d3a625;
+      background: #53441a;
     }
   }
 }

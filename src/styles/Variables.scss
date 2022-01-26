@@ -23,8 +23,11 @@ $fontFamily: "Yusei Magic", sans-serif;
 @mixin label() {
   margin-top: 3px;
   width: 100%;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "magic-school", sans-serif;
   font-size: 1.1rem;
+  @media all and(min-width:768px){
+    font-size: 1.5rem;
+  }
 }
 @mixin input() {
   margin-bottom: 3px;
@@ -54,10 +57,12 @@ $fontFamily: "Yusei Magic", sans-serif;
   width: 100%;
   justify-content: center;
   margin-top: 50px;
+  font-family: "dumbendor", sans-serif;
   @media all and(min-width:1200px) {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 0;
+    font-size: 1.5rem;
   }
 }
 @mixin list {
