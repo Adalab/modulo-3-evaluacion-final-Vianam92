@@ -7,12 +7,12 @@ const FiltersHouse = (props) =>{
     }
 return(
     <>
-    <label htmlFor="house">Selecciona la casa:</label>
-    <select id="house" name="house" onChange={handleChangeHouse} value={props.searchHouse}>
-        <option value="gryffindor">Gryffindor</option>
-        <option value="hufflepuff">Hufflepuff</option>
-        <option value="ravenclaw">Ravenclaw</option>
-        <option value="slytherin">Slytherin</option>
+    <label htmlFor="house" className={`form-${props.searchHouse}__label`}>Selecciona la casa:</label>
+    <select id="house" name="house" className={`form-${props.searchHouse}__input`} onChange={handleChangeHouse} value={props.searchHouse}>
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+        <option value="Slytherin">Slytherin</option>
     </select>
     </>
 )

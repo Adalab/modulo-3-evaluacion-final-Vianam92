@@ -1,0 +1,113 @@
+@import "./Variables.scss";
+
+.section-Gryffindor {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  &__title {
+    text-align: center;
+    color: $color-princ;
+    margin: 20px 10px 10px 10px;
+  }
+  &__image {
+    width: 150px;
+    height: 224px;
+    object-fit: cover;
+  }
+  &__detail {
+    color: $color-princ;
+    margin: 5px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-princ;
+    text-align:right;
+    width: 100%;
+    padding:10px;
+  }
+};
+
+.section-Slytherin {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  &__title {
+    text-align: center;
+    color: #2A623D;
+    margin: 20px 10px 10px 10px;
+  }
+  &__image {
+    width: 150px;
+    height: 224px;
+    object-fit: cover;
+  }
+  &__detail {
+    color: #2A623D;
+    margin: 5px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #2A623D;
+    text-align:right;
+    width: 100%;
+    padding:10px;
+  }
+};
+
+.section-Ravenclaw {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  &__title {
+    text-align: center;
+    color: #946B2D ;
+    margin: 20px 10px 10px 10px;
+  }
+  &__image {
+    width: 150px;
+    height: 224px;
+    object-fit: cover;
+  }
+  &__detail {
+    color: #946B2D ;
+    margin: 5px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #946B2D ;
+    text-align:right;
+    width: 100%;
+    padding:10px;
+  }
+};
+
+.section-Hufflepuff {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  &__title {
+    text-align: center;
+    color: #FFF4B1;
+    margin: 20px 10px 10px 10px;
+  }
+  &__image {
+    width: 150px;
+    height: 224px;
+    object-fit: cover;
+  }
+  &__detail {
+    color: #FFF4B1;
+    margin: 5px;
+  }
+  &__link {
+    text-decoration: none;
+    color:#FFF4B1;
+    text-align:right;
+    width: 100%;
+    padding:10px;
+  }
+};

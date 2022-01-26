@@ -7,10 +7,15 @@ const FiltersName = (props) => {
     }
   return (
     <>
-      <label htmlFor="character">Busca por Personaje</label>
-      <input name="character" id="character" value={props.searchName} onChange={handleSearch}/>
+      <label className={`form-${props.searchHouse}__label`} htmlFor="character">Busca por Personaje</label>
+      <input className={`form-${props.searchHouse}__input`} type={props.inputType} name="character" id="character" value={props.searchName} onChange={handleSearch}/>
     </>
   );
+};
+
+// Estas son las default props
+FiltersName.defaultProps = {
+  inputType: 'text'
 };
 
 export default FiltersName;

@@ -1,14 +1,12 @@
-import { v4 as uuid } from 'uuid';
-
-const getApi = (searchHouse) => {
+const getApi = () => {
   return fetch(
-    `http://hp-api.herokuapp.com/api/characters/house/${searchHouse}`
+    "http://hp-api.herokuapp.com/api/characters"
   )
     .then((response) => response.json())
     .then((data) => {
-      const result = data.map((item, index) => {
+      const result = data.map((item,index) => {
         return {
-          id:uuid(),
+          id:index,
           name: item.name,
           alive: item.alive,
           gender: item.gender,

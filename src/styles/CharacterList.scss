@@ -1,0 +1,153 @@
+@import "./Variables.scss";
+
+.section-Gryffindor{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:$color-princ ;
+        width: 250px;
+        height: 300px;
+        margin:10px;
+        &--img{
+            width: 150px;
+            height: 224px;
+            object-fit: cover;
+        }
+        &--h3{
+            text-align: center;
+            color:#D3A625;
+        }
+        &--text{
+            text-align: center;
+            color:#D3A625;
+        }
+    }
+};
+
+.message{
+    color:$color-princ;
+    text-align: center;
+    margin-top: 50px;
+};
+
+.section-Slytherin{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:#5d5d5d3a;
+        width: 250px;
+        height: 300px;
+        margin:10px;
+        &--img{
+            width: 150px;
+            height: 224px;
+            object-fit: cover;
+        }
+        &--h3{
+            text-align: center;
+            color:#2A623D ;
+        }
+        &--text{
+            text-align: center;
+            color:#2A623D ;
+        }
+    }
+};
+
+.message{
+    color:#2A623D;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-Ravenclaw{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:#222F5B ;
+        width: 250px;
+        height: 300px;
+        margin:10px;
+        &--img{
+            width: 150px;
+            height: 224px;
+            object-fit: cover;
+        }
+        &--h3{
+            text-align: center;
+            color:#946B2D;
+        }
+        &--text{
+            text-align: center;
+            color:#946B2D;
+        }
+    }
+};
+
+.message{
+    color:#0E1A40;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-Hufflepuff{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:#FFF4B1 ;
+        width: 250px;
+        height: 300px;
+        margin:10px;
+        &--img{
+            width: 150px;
+            height: 224px;
+            object-fit: cover;
+        }
+        &--h3{
+            text-align: center;
+            color:#FFDB00;
+        }
+        &--text{
+            text-align: center;
+            color:#FFDB00;
+        }
+    }
+};
+
+.message{
+    color:#FFDB00;
+    text-align: center;
+    margin-top: 50px;
+}
