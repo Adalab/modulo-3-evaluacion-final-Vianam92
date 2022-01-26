@@ -85,8 +85,14 @@ $fontFamily: "Yusei Magic", sans-serif;
 
 @mixin message() {
   text-align: center;
-  margin-top: 50px;
+  margin: 50px 50px;
   font-size: 1.2rem;
+  @media all and (min-width:768px){
+    width: 300px;
+  }
+  @media all and (min-width:1200px){
+    width: 500px;
+  }
 }
 
 //mixin de details

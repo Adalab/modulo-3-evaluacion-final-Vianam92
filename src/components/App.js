@@ -61,7 +61,6 @@ function App() {
   const renderCharacterDetail = () => {
     if (routeId) {
       const routeIdHouse = routeId.params.id;
-      console.log(routeIdHouse);
       return house.find(character => {
         return character.id === parseInt(routeIdHouse);
       });
