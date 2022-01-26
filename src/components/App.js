@@ -17,6 +17,7 @@ function App() {
   const [searchGender, setSearchGender] = useState(ls.get("searchGender","Any"));
   const [searchName, setSearchName] = useState(ls.get("searchName", ""));
 
+
   //get Api
   useEffect(() => {
     getApi().then((data) => setHouse(data));

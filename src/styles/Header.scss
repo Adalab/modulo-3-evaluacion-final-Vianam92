@@ -7,6 +7,11 @@
     @media all and(min-width:768px){
         width: auto;
     }
+    &__btn{
+        color:rgb(14, 212, 226);
+        background-color: rgb(5, 75, 69);
+        padding:5px;
+    }
     &__image{
         width: 100%;
         &--logo{
