@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.2f547503.css",
-    "main.js": "./static/js/main.a1db17ac.js",
+    "main.css": "./static/css/main.582f5956.css",
+    "main.js": "./static/js/main.45ba8091.js",
+    "static/js/845.14d92c2d.chunk.js": "./static/js/845.14d92c2d.chunk.js",
+    "static/media/Harry Potter Theme Song (FULLBULLA.ORG).mp3": "./static/media/Harry Potter Theme Song (FULLBULLA.ORG).2ccac1d2e86c6c364b81.mp3",
+    "static/media/gryffindor.png": "./static/media/gryffindor.5a034baa58eb38d4958c.png",
+    "static/media/huplepuff.png": "./static/media/huplepuff.8bc0c8fec830750df9ea.png",
+    "static/media/slyderin.png": "./static/media/slyderin.d89c32c10209cd4c21e5.png",
+    "static/media/ravenclaw.png": "./static/media/ravenclaw.c1cc42b8fa6ce3c7b3a2.png",
+    "static/media/title-logo.png": "./static/media/title-logo.698b9dcf59cd7af00ab0.png",
     "index.html": "./index.html",
-    "main.2f547503.css.map": "./static/css/main.2f547503.css.map",
-    "main.a1db17ac.js.map": "./static/js/main.a1db17ac.js.map"
+    "main.582f5956.css.map": "./static/css/main.582f5956.css.map",
+    "main.45ba8091.js.map": "./static/js/main.45ba8091.js.map",
+    "845.14d92c2d.chunk.js.map": "./static/js/845.14d92c2d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f547503.css",
-    "static/js/main.a1db17ac.js"
+    "static/css/main.582f5956.css",
+    "static/js/main.45ba8091.js"
   ]
 }
