@@ -7,8 +7,9 @@ const Header = () => {
     const [play ,{stop}] = useSound(music);
     return (
       <>
-        <button onClick={()=> play()} className="header__btn">ON</button>
-        <button onClick={()=>stop()} className="header__btn">OFF</button>
+      <div className="header__btn"><button onClick={()=> play()} className="header__btn--boton">ON</button>
+        <button onClick={()=>stop()} className="header__btn--boton">OFF</button></div>
+        
       </>
     );
   };

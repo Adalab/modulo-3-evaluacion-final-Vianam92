@@ -3,6 +3,7 @@ import slytheryn from "../images/slyderin.png";
 import gryffindor from "../images/gryffindor.png";
 import hupepuf from "../images/huplepuff.png";
 import ravenclew from "../images/ravenclaw.png";
+import heart from "../images/pulse.svg";
 import CharacterNotFound from "./CharacterNotFound";
 import "../styles/CharacterDetail.scss";
 
@@ -21,7 +22,7 @@ const CharacterDetail = ({ house }) => {
   }};
   return house === undefined?<CharacterNotFound/>:(
     <section className={`section--${house.house}`}>
-      <Link to="/" className={`section--${house.house}__link`}>Volver Atrás</Link>
+      <Link to="/" className={`section--${house.house}__link`}><i class="fa fa-angle-left"></i>Volver Atrás</Link>
       <h2 className={`section--${house.house}__title`}>Detalle del personaje</h2>
       <img className={`section--${house.house}__image`}
         src={
@@ -32,7 +33,7 @@ const CharacterDetail = ({ house }) => {
         title={`Foto de ${house.name}`}
       />
       <h3 className={`section--${house.house}__detail`}>{house.name}</h3>
-      <h3 className={`section--${house.house}__detail`}>{`Status: ${house.alive === true?"Viva":"Muerta"}`} <small className="small">{house.alive===true?<i className="fas fa-heart live"></i>:<i className="fas fa-skull"></i>}</small></h3>
+      <h3 className={`section--${house.house}__detail`}>{`Status: ${house.alive === true?"Viva":"Muerta"}`} <small className="small">{house.alive===true?<img className="live" src={heart} alt="heart live"/>:<i className="fas fa-skull"></i>}</small></h3>
       
       <h3 className={`section--${house.house}__detail`}>{`Especie: ${house.species}`}</h3>
       <h3 className={`section--${house.house}__detail`}>{`Género: ${house.gender}`}</h3>
