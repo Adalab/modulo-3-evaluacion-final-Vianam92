@@ -22,7 +22,7 @@ const CharacterDetail = ({ house }) => {
   }};
   return house === undefined?<CharacterNotFound/>:(
     <section className={`section--${house.house}`}>
-      <Link to="/" className={`section--${house.house}__link`}><i class="fa fa-angle-left"></i>Volver Atrás</Link>
+      <Link to="/" className={`section--${house.house}__link`}><i className="fa fa-angle-left"></i>Volver Atrás</Link>
       <h2 className={`section--${house.house}__title`}>Detalle del personaje</h2>
       <img className={`section--${house.house}__image`}
         src={

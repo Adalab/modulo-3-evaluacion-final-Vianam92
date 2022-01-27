@@ -136,8 +136,8 @@ $fontFamily: "Yusei Magic", sans-serif;
     }
 }
 @mixin house() {
-  width: 100px;
   margin-top:10px;
+  padding:5px;
 }
 @mixin detail() {
   margin-top:15px;

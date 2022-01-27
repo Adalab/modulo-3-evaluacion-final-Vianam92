@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 
+
 const CharacterCard = ({ house }) => {
   return (
     <Link to={`/character/${house.id}`}>
@@ -16,7 +17,6 @@ const CharacterCard = ({ house }) => {
       <h3 className={`section-${house.house}__list--h3`}>{house.name}</h3>
       <p className={`section-${house.house}__list--text`}>{house.species}</p>
       </Link>
-
   );
 };
 

@@ -17,10 +17,9 @@ function App() {
   const [searchGender, setSearchGender] = useState(ls.get("searchGender","Any"));
   const [searchName, setSearchName] = useState(ls.get("searchName", ""));
 
-
   //get Api
   useEffect(() => {
-    getApi().then((data) => setHouse(data));
+    getApi().then(data => setHouse(data));
   }, []);
 
   //local Storage
@@ -82,8 +81,7 @@ function App() {
             handleResetBtn={handleResetBtn}
             character={filteredHouse}
           />
-          <CharacterList character={filteredHouse} valueHouse={searchHouse} />
-          <footer className="Footer"><a href="/"><i class="fa fa-arrow-up footer__icon"></i></a></footer>
+          <CharacterList character={filteredHouse} valueHouse={searchHouse}/>
         </Route>
         <Route path="/character/:id">
           <CharacterDetail house={renderCharacterDetail()} />

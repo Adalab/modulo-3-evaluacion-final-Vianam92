@@ -6,7 +6,7 @@ const CharacterList = ({ character , valueHouse}) => {
   const characters = character.map((house) => {
     return (
       <li key={house.id} id={house.id} className={`section-${valueHouse}__list`}>
-        <CharacterCard house={house} />
+        <CharacterCard house={house}/>
       </li>
     );
   })
