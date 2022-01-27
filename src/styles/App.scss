@@ -10,3 +10,19 @@ body{
     margin-top:220px;
     }
 };
+
+.footer{
+    width: 100%;
+    &__icon{
+        color:white;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        text-align: end;
+        position: fixed;
+        bottom: 20px;
+        @media all and(min-width:768px){
+            font-size: 25px;
+        };
+    };
+};

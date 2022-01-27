@@ -83,6 +83,7 @@ function App() {
             character={filteredHouse}
           />
           <CharacterList character={filteredHouse} valueHouse={searchHouse} />
+          <footer className="Footer"><a href="/"><i class="fa fa-arrow-up footer__icon"></i></a></footer>
         </Route>
         <Route path="/character/:id">
           <CharacterDetail house={renderCharacterDetail()} />
