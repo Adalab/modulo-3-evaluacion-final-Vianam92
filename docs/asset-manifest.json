@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.841599eb.css",
-    "main.js": "./static/js/main.8b76e3cb.js",
+    "main.js": "./static/js/main.aad39789.js",
     "static/js/845.14d92c2d.chunk.js": "./static/js/845.14d92c2d.chunk.js",
     "static/media/Harry Potter Theme Song (FULLBULLA.ORG).mp3": "./static/media/Harry Potter Theme Song (FULLBULLA.ORG).2ccac1d2e86c6c364b81.mp3",
     "static/media/gryffindor.png": "./static/media/gryffindor.5a034baa58eb38d4958c.png",
@@ -14,11 +14,11 @@
     "static/media/pulse.svg": "./static/media/pulse.bdd4c9aadf98ea4eb2f751a953d79b10.svg",
     "index.html": "./index.html",
     "main.841599eb.css.map": "./static/css/main.841599eb.css.map",
-    "main.8b76e3cb.js.map": "./static/js/main.8b76e3cb.js.map",
+    "main.aad39789.js.map": "./static/js/main.aad39789.js.map",
     "845.14d92c2d.chunk.js.map": "./static/js/845.14d92c2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.841599eb.css",
-    "static/js/main.8b76e3cb.js"
+    "static/js/main.aad39789.js"
   ]
 }
