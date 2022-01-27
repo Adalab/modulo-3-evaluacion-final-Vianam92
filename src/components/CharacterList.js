@@ -9,8 +9,7 @@ const CharacterList = ({ character , valueHouse}) => {
         <CharacterCard house={house}/>
       </li>
     );
-  })
-  .sort();
+  });
   return characters.length === 0 ? <p className="message">No hay ningún personaje que coincida con la palabra introducida.</p> : (
     <section className="section-character">
         <ul className={`section-${valueHouse}`}>{characters}</ul>

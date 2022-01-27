@@ -8,7 +8,7 @@ const FiltersName = (props) => {
   return (
     <>
       <label className={`form-${props.searchHouse}__label`} htmlFor="character">Busca por Personaje</label>
-      <input className={`form-${props.searchHouse}__input`} type={props.inputType} name="character" id="character" value={props.searchName} onChange={handleSearch}/>
+      <input className={`form-${props.searchHouse}__input`} type={props.inputType} placeholder="Ej: Hermione" name="character" id="character" value={props.searchName} onChange={handleSearch}/>
     </>
   );
 };

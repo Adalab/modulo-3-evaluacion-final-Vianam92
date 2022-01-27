@@ -6,24 +6,20 @@ body{
     //
     @media all and(min-width:768px){
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     margin-top:220px;
     }
 };
 
-/*.footer{
+.footer{
     width: 100%;
-    &__icon{
+    text-align: right;
+    &__copy{
         color:white;
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
-        text-align: end;
-        position: fixed;
-        bottom: 20px;
-        right: 15px;
+        font-size:1rem;
         @media all and(min-width:768px){
-            font-size: 25px;
+            font-size: 1.2rem;
         };
     };
-};*/
+};

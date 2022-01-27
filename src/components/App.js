@@ -12,22 +12,26 @@ import { Route, Switch, useRouteMatch } from "react-router-dom";
 import ls from "../services/LocalStorage";
 
 function App() {
-  const [house, setHouse] = useState(ls.get("house",[]));
-  const [searchHouse, setsearchHouse] = useState(ls.get("searchHouse","Gryffindor"));
-  const [searchGender, setSearchGender] = useState(ls.get("searchGender","Any"));
+  const [house, setHouse] = useState(ls.get("house", []));
+  const [searchHouse, setsearchHouse] = useState(
+    ls.get("searchHouse", "Gryffindor")
+  );
+  const [searchGender, setSearchGender] = useState(
+    ls.get("searchGender", "Any")
+  );
   const [searchName, setSearchName] = useState(ls.get("searchName", ""));
 
   //get Api
   useEffect(() => {
-    getApi().then(data => setHouse(data));
+    getApi().then((data) => setHouse(data));
   }, []);
 
   //local Storage
   useEffect(() => {
-    ls.set('house', house);
-    ls.set('searchName', searchName);
-    ls.set('searchGender', searchGender);
-    ls.set('searchHouse', searchHouse);
+    ls.set("house", house);
+    ls.set("searchName", searchName);
+    ls.set("searchGender", searchGender);
+    ls.set("searchHouse", searchHouse);
   }, [house, searchName, searchGender, searchHouse]);
 
   //handlers
@@ -36,13 +40,13 @@ function App() {
       setsearchHouse(data.value);
     } else if (data.key === "character") {
       setSearchName(data.value);
-    } else if(data.key === "gender"){
+    } else if (data.key === "gender") {
       setSearchGender(data.value);
     }
   };
 
   //reset
-  const handleResetBtn = () =>{
+  const handleResetBtn = () => {
     setsearchHouse("Gryffindor");
     setSearchGender("Any");
     setSearchName("");
@@ -52,16 +56,23 @@ function App() {
     .filter((character) => {
       return character.name.toLowerCase().includes(searchName.toLowerCase());
     })
-    .filter(eachCharacter => searchHouse === "Gryffindor" ? eachCharacter.house === "Gryffindor":searchHouse === eachCharacter.house
+    .filter((eachCharacter) =>
+      searchHouse === "Gryffindor"
+        ? eachCharacter.house === "Gryffindor"
+        : searchHouse === eachCharacter.house
     )
-    .filter(eachCharacter => searchGender === "Any"? eachCharacter.gender : eachCharacter.gender===searchGender);
+    .filter((eachCharacter) =>
+      searchGender === "Any"
+        ? eachCharacter.gender
+        : eachCharacter.gender === searchGender
+    );
 
   const routeId = useRouteMatch("/character/:id");
 
   const renderCharacterDetail = () => {
     if (routeId) {
       const routeIdHouse = routeId.params.id;
-      return house.find(character => {
+      return house.find((character) => {
         return character.id === parseInt(routeIdHouse);
       });
     }
@@ -69,24 +80,27 @@ function App() {
 
   return (
     <>
-     <Header/>
-     <main className="main">
-      <Switch>
-        <Route path="/" exact>
-          <Filters
-            handleSearch={handleSearch}
-            value={searchName}
-            valueHouse={searchHouse}
-            valueGender={searchGender}
-            handleResetBtn={handleResetBtn}
-            character={filteredHouse}
-          />
-          <CharacterList character={filteredHouse} valueHouse={searchHouse}/>
-        </Route>
-        <Route path="/character/:id">
-          <CharacterDetail house={renderCharacterDetail()} />
-        </Route>
-      </Switch>
+      <Header />
+      <main className="main">
+        <Switch>
+          <Route path="/" exact>
+            <Filters
+              handleSearch={handleSearch}
+              value={searchName}
+              valueHouse={searchHouse}
+              valueGender={searchGender}
+              handleResetBtn={handleResetBtn}
+              character={filteredHouse}
+            />
+            <CharacterList character={filteredHouse} valueHouse={searchHouse} />
+            <footer className="footer">
+              <small className="footer__copy">&copy; 2022 Vianam92 </small>
+            </footer>
+          </Route>
+          <Route path="/character/:id">
+            <CharacterDetail house={renderCharacterDetail()}/>
+          </Route>
+        </Switch>
       </main>
     </>
   );

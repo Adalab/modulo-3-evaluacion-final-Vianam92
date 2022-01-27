@@ -20,7 +20,7 @@ const Filters = (props) => {
         type="reset"
         name="button"
         className={`form-${props.valueHouse}__btn`}
-        value="reset"
+        value="Borrar Búsqueda"
         onClick={props.handleResetBtn}
       />
     </form>
