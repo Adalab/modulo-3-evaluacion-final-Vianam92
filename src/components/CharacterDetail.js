@@ -33,10 +33,10 @@ const CharacterDetail = ({ house }) => {
         title={`Foto de ${house.name}`}
       />
       <h3 className={`section--${house.house}__detail`}>{house.name}</h3>
-      <h3 className={`section--${house.house}__detail`}>{`Status: ${house.alive === true?"Viva":"Muerta"}`} <small className="small">{house.alive===true?<img className="live" src={heart} alt="heart live"/>:<i className="fas fa-skull"></i>}</small></h3>
+      <h3 className={`section--${house.house}__detail`}>{`Status: ${house.alive === true?"viva":"muerta"}`} <small className="small">{house.alive===true?<img className="live" src={heart} alt="heart live"/>:<i className="fas fa-skull"></i>}</small></h3>
       
       <h3 className={`section--${house.house}__detail`}>{`Especie: ${house.species}`}</h3>
-      <h3 className={`section--${house.house}__detail`}>{`Género: ${house.gender}`}</h3>
+      <h3 className={`section--${house.house}__detail`}>{`Género: ${house.gender==="male"?"hombre":"mujer"}`}</h3>
       <h3 className={`section--${house.house}__detail`}>{`Casa: ${house.house}`}</h3>
       <img src={isImage()} alt="casa" className={`section--${house.house}__img_house`}/>
     </section>
