@@ -7,6 +7,7 @@
   }
   @media all and(min-width:1200px) {
       width: 70%;
+      margin-right: 20px;
   }
 }
 
@@ -15,6 +16,9 @@
   &__list {
     background-color: rgba(189, 18, 18, 0.877);
     @include list;
+    &:hover{
+      background-color:#9b4207;
+    }
     &--img {
       @include img;
     }
@@ -39,6 +43,9 @@
   &__list {
     background-color: #5d5d5d3a;
     @include list;
+    &:hover{
+      background-color: #235f375e;
+    }
     &--img {
       @include img;
     }
@@ -58,6 +65,9 @@
   &__list {
     background-color: #222f5b;
     @include list;
+    &:hover{
+      background-color: #946b2d6e;
+    }
     &--img {
       @include img;
     }
@@ -77,6 +87,9 @@
   &__list {
     @include list;
     background-color: #b1a86d;
+    &:hover{
+      background-color: #ffed86;
+    }
     &--img {
       @include img;
     }

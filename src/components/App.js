@@ -8,6 +8,7 @@ import Filters from "./Filters";
 import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
 import Header from "./Header";
+import Footer from "./Footer";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
 import ls from "../services/LocalStorage";
 
@@ -20,6 +21,7 @@ function App() {
     ls.get("searchGender", "Any")
   );
   const [searchName, setSearchName] = useState(ls.get("searchName", ""));
+  const [seachSpecies, setSearchSpecies] = useState("all");
 
   //get Api
   useEffect(() => {
@@ -32,7 +34,8 @@ function App() {
     ls.set("searchName", searchName);
     ls.set("searchGender", searchGender);
     ls.set("searchHouse", searchHouse);
-  }, [house, searchName, searchGender, searchHouse]);
+    ls.set("searchSpecies", seachSpecies);
+  }, [house, searchName, searchGender, searchHouse,seachSpecies]);
 
   //handlers
   const handleSearch = (data) => {
@@ -42,6 +45,8 @@ function App() {
       setSearchName(data.value);
     } else if (data.key === "gender") {
       setSearchGender(data.value);
+    } else if (data.key === "species") {
+      setSearchSpecies(data.value);
     }
   };
 
@@ -50,6 +55,7 @@ function App() {
     setsearchHouse("Gryffindor");
     setSearchGender("Any");
     setSearchName("");
+    setSearchSpecies("all");
   };
 
   const filteredHouse = house
@@ -65,7 +71,12 @@ function App() {
       searchGender === "Any"
         ? eachCharacter.gender
         : eachCharacter.gender === searchGender
-    );
+    )
+    .filter((eachCharacter) => {
+      return seachSpecies === "all"
+        ? eachCharacter.species
+        : eachCharacter.species === seachSpecies;
+    });
 
   const routeId = useRouteMatch("/character/:id");
 
@@ -91,14 +102,13 @@ function App() {
               valueGender={searchGender}
               handleResetBtn={handleResetBtn}
               character={filteredHouse}
+              valueSpecies={seachSpecies}
             />
             <CharacterList character={filteredHouse} valueHouse={searchHouse} />
-            <footer className="footer">
-              <small className="footer__copy">&copy; 2022 Vianam92 </small>
-            </footer>
+            <Footer/>
           </Route>
           <Route path="/character/:id">
-            <CharacterDetail house={renderCharacterDetail()}/>
+            <CharacterDetail house={renderCharacterDetail()} />
           </Route>
         </Switch>
       </main>
