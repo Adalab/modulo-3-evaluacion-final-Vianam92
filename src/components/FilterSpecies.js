@@ -16,7 +16,7 @@ const FilterSpecies = (props) => {
         className={`form-${props.searchHouse}__input`}
       >
         <option value="all">Todos</option>
-        <option value="human">Human</option>
+        <option value="human">Humano</option>
         <option value="half-giant">Medio Gigante</option>
         <option value="worewolf">Hombre Lobo</option>
       </select>

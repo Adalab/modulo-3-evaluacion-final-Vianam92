@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import harry from "../images/harry.jpeg";
 
 const CharacterCard = ({ house }) => {
   const translateSpecies = () => {
@@ -18,7 +19,7 @@ const CharacterCard = ({ house }) => {
         className={`section-${house.house}__list--img`}
         src={
           house.image === ""
-            ? `https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.letribunaldunet.fr%2Fwp-content%2Fuploads%2F2020%2F06%2Fharry-potter-2.jpg&f=1&nofb=1`
+            ? harry
             : house.image
         }
         alt={`Foto de ${house.name}`}
